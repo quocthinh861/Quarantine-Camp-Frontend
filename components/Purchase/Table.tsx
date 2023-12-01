@@ -99,7 +99,9 @@ export default function Table({ data }) {
                   </thead>
                   <tbody className="bg-white divide-y divide-gray-200">
                     {tableData.map((row) => (
-                      <tr key={row.id}>
+                      <tr key={row.id} onClick={ () => {
+                        window.location.href = `/report/${row.patientId}`;
+                      }}>
                         <td className="px-6 py-4 whitespace-nowrap description-cell">
                           {row.patientId}
                         </td>
