@@ -16,6 +16,7 @@ function MyApp({ Component, pageProps }) {
   const pagesWithoutLayout = [
     "/auth/signin",
     "/public-page" /* add more pages */,
+    "/auth/error"
   ];
 
   // Check if the current page requires authentication
